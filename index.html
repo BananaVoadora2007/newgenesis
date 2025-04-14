@@ -5,156 +5,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pokédex - Pokémons Iniciais e suas Evoluções</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Melhorias de acessibilidade no estilo */
+    body {
+      font-size: 1.2rem; /* Tamanho de fonte maior para melhorar a leitura */
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #6200ea;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      font-size: 2.5rem;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Adicionando foco visível */
+    .card:focus {
+      outline: 3px solid #6200ea;
+    }
+
+    .galeria-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .galeria-container a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Acessibilidade de cores: Contraste alto */
+    .card h3 {
+      color: #6200ea;
+    }
+
+    /* Modificar o botão de contraste */
+    .contrast-button {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      margin: 20px;
+    }
+
+    .contrast-button:hover {
+      background-color: #444;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Pokédex - Pokémons Iniciais e suas Evoluções</h1>
+    <p>Exploração dos Pokémon iniciais e suas formas evolutivas.</p>
   </header>
+
+  <!-- Acessibilidade: Opção para alterar o contraste -->
+  <button class="contrast-button" onclick="toggleContrast()">Alternar Contraste</button>
 
   <section id="galeria">
     <h2>Pokémons Iniciais e suas Evoluções</h2>
     <div class="galeria-container">
-      <!-- 1ª Geração: Bulbasaur, Ivysaur, Venusaur -->
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
+      <!-- Exemplo de cartão de Pokémon -->
+      <div class="card" tabindex="0">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur, o Pokémon inicial de Grama. Ele tem uma planta em suas costas que cresce com sua evolução.">
         <h3>#001 Bulbasaur</h3>
         <p>Bulbasaur é um Pokémon que carrega um bulbo em suas costas, que cresce conforme ele se desenvolve.</p>
       </div>
 
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur">
+      <div class="card" tabindex="0">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur, a evolução de Bulbasaur. Sua planta em suas costas começa a florescer.">
         <h3>#002 Ivysaur</h3>
         <p>Ivysaur é a forma intermediária, onde o bulbo começa a florescer, e ele se torna mais forte.</p>
       </div>
 
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Venusaur">
+      <div class="card" tabindex="0">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Venusaur, a evolução final de Bulbasaur. Ele tem uma grande flor em suas costas.">
         <h3>#003 Venusaur</h3>
-        <p>Venusaur, a evolução final, tem um grande arbusto em suas costas, que floresce completamente.</p>
+        <p>Venusaur, a forma final, tem um grande arbusto em suas costas, que floresce completamente.</p>
       </div>
 
-      <!-- 2ª Geração: Chikorita, Bayleef, Meganium -->
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/152.png" alt="Chikorita">
-        <h3>#152 Chikorita</h3>
-        <p>Chikorita é um Pokémon amável que emite um aroma suave que pode acalmar os corações das pessoas.</p>
-      </div>
+      <!-- Outros cartões de Pokémon aqui... -->
 
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/153.png" alt="Bayleef">
-        <h3>#153 Bayleef</h3>
-        <p>Bayleef tem uma coroa de folhas em sua cabeça, e sua energia é usada para curar seus aliados.</p>
-      </div>
+    </div>
+  </section>
 
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/154.png" alt="Meganium">
-        <h3>#154 Meganium</h3>
-        <p>Meganium, a última forma evoluída, é conhecida por sua natureza pacífica e poder curativo.</p>
-      </div>
+  <footer>
+    <p>&copy; 2025 Pokédex. Todos os direitos reservados.</p>
+  </footer>
 
-      <!-- 3ª Geração: Treecko, Grovyle, Sceptile -->
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/252.png" alt="Treecko">
-        <h3>#252 Treecko</h3>
-        <p>Treecko é um Pokémon do tipo grama, ágil e com habilidades excepcionais de escalar árvores.</p>
-      </div>
+  <script>
+    // Função para alternar o contraste
+    function toggleContrast() {
+      document.body.classList.toggle('high-contrast');
+    }
 
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/253.png" alt="Grovyle">
-        <h3>#253 Grovyle</h3>
-        <p>Grovyle é a evolução intermediária de Treecko, com maior destreza e habilidades de combate.</p>
-      </div>
+    // Adicionando classe de contraste ao body
+    document.body.classList.add('high-contrast');
+  </script>
 
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/254.png" alt="Sceptile">
-        <h3>#254 Sceptile</h3>
-        <p>Sceptile é um Pokémon rápido e forte, com uma grande conexão com a natureza e suas raízes.</p>
-      </div>
-
-      <!-- 4ª Geração: Turtwig, Grotle, Torterra -->
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/387.png" alt="Turtwig">
-        <h3>#387 Turtwig</h3>
-        <p>Turtwig é um Pokémon do tipo grama, pequeno e ágil, com um casco que absorve a energia solar.</p>
-      </div>
-
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/388.png" alt="Grotle">
-        <h3>#388 Grotle</h3>
-        <p>Grotle é mais forte e mais resistente, movendo-se mais lentamente devido ao tamanho de seu casco.</p>
-      </div>
-
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/389.png" alt="Torterra">
-        <h3>#389 Torterra</h3>
-        <p>Torterra é um Pokémon poderoso, com um enorme ecossistema em seu casco, representando a força da natureza.</p>
-      </div>
-
-      <!-- 5ª Geração: Snivy, Servine, Serperior -->
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/495.png" alt="Snivy">
-        <h3>#495 Snivy</h3>
-        <p>Snivy é um Pokémon do tipo grama com grande orgulho e uma postura arrogante, mas ágil e estratégico.</p>
-      </div>
-
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/496.png" alt="Servine">
-        <h3>#496 Servine</h3>
-        <p>Servine é a evolução intermediária, mais rápida e sagaz, com habilidades de combate aprimoradas.</p>
-      </div>
-
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/497.png" alt="Serperior">
-        <h3>#497 Serperior</h3>
-        <p>Serperior é um Pokémon majestoso, com um grande controle sobre a batalha e uma postura altiva.</p>
-      </div>
-
-      <!-- 6ª Geração: Chespin, Quilladin, Chestnaught -->
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/650.png" alt="Chespin">
-        <h3>#650 Chespin</h3>
-        <p>Chespin é um Pokémon de tipo grama com uma personalidade brincalhona, sempre se escondendo nas folhas.</p>
-      </div>
-
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/651.png" alt="Quilladin">
-        <h3>#651 Quilladin</h3>
-        <p>Quilladin é um Pokémon com uma armadura espinhosa, sendo resistente e mais agressivo em batalha.</p>
-      </div>
-
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/652.png" alt="Chestnaught">
-        <h3>#652 Chestnaught</h3>
-        <p>Chestnaught é forte e corajoso, com um grande poder defensivo e capacidade de proteger seus aliados.</p>
-      </div>
-
-      <!-- 7ª Geração: Rowlet, Dartrix, Decidueye -->
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/722.png" alt="Rowlet">
-        <h3>#722 Rowlet</h3>
-        <p>Rowlet é um Pokémon que pode disparar penas afiadas como flechas, ideal para batalhas furtivas.</p>
-      </div>
-
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/723.png" alt="Dartrix">
-        <h3>#723 Dartrix</h3>
-        <p>Dartrix é a evolução intermediária, mais ágil e com habilidades aprimoradas para combate à distância.</p>
-      </div>
-
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/724.png" alt="Decidueye">
-        <h3>#724 Decidueye</h3>
-        <p>Decidueye é um Pokémon com incrível precisão de tiro, sendo um mestre das flechas e furtividade.</p>
-      </div>
-
-      <!-- 8ª Geração: Grookey, Thwackey, Rillaboom -->
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/810.png" alt="Grookey">
-        <h3>#810 Grookey</h3>
-        <p>Grookey adora bater no tronco das árvores, criando ritmos e acompanhando músicas com sua energia.</p>
-      </div>
-
-      <div class="card">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/811.png" alt="Thwackey">
-        <h3>#811 Thwackey</h3>
-        <p>Thwackey se torna mais independente e usa seu bastão para criar poderosos
+</body>
+</html>
