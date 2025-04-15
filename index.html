@@ -5,135 +5,189 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pokédex - Pokémons Iniciais e suas Evoluções</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Melhorias de acessibilidade no estilo */
-    body {
-      font-size: 1.2rem; /* Tamanho de fonte maior para melhorar a leitura */
-      line-height: 1.6;
-      background-color: #f4f4f9;
-      color: #333;
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      background-color: #6200ea;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1, h2 {
-      font-size: 2.5rem;
-    }
-
-    .card {
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      margin: 20px;
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .card img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    /* Adicionando foco visível */
-    .card:focus {
-      outline: 3px solid #6200ea;
-    }
-
-    .galeria-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .galeria-container a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* Acessibilidade de cores: Contraste alto */
-    .card h3 {
-      color: #6200ea;
-    }
-
-    /* Modificar o botão de contraste */
-    .contrast-button {
-      background-color: #333;
-      color: white;
-      padding: 10px;
-      font-size: 1rem;
-      border: none;
-      cursor: pointer;
-      margin: 20px;
-    }
-
-    .contrast-button:hover {
-      background-color: #444;
-    }
-  </style>
 </head>
 <body>
-
   <header>
     <h1>Pokédex - Pokémons Iniciais e suas Evoluções</h1>
-    <p>Exploração dos Pokémon iniciais e suas formas evolutivas.</p>
   </header>
-
-  <!-- Acessibilidade: Opção para alterar o contraste -->
-  <button class="contrast-button" onclick="toggleContrast()">Alternar Contraste</button>
 
   <section id="galeria">
     <h2>Pokémons Iniciais e suas Evoluções</h2>
     <div class="galeria-container">
-      <!-- Exemplo de cartão de Pokémon -->
-      <div class="card" tabindex="0">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur, o Pokémon inicial de Grama. Ele tem uma planta em suas costas que cresce com sua evolução.">
+      <!-- 1ª Geração: Bulbasaur, Ivysaur, Venusaur -->
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
         <h3>#001 Bulbasaur</h3>
         <p>Bulbasaur é um Pokémon que carrega um bulbo em suas costas, que cresce conforme ele se desenvolve.</p>
       </div>
 
-      <div class="card" tabindex="0">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur, a evolução de Bulbasaur. Sua planta em suas costas começa a florescer.">
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Ivysaur">
         <h3>#002 Ivysaur</h3>
         <p>Ivysaur é a forma intermediária, onde o bulbo começa a florescer, e ele se torna mais forte.</p>
       </div>
 
-      <div class="card" tabindex="0">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Venusaur, a evolução final de Bulbasaur. Ele tem uma grande flor em suas costas.">
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Venusaur">
         <h3>#003 Venusaur</h3>
-        <p>Venusaur, a forma final, tem um grande arbusto em suas costas, que floresce completamente.</p>
+        <p>Venusaur, a evolução final, tem um grande arbusto em suas costas, que floresce completamente.</p>
       </div>
 
-      <!-- Outros cartões de Pokémon aqui... -->
+      <!-- 1ª Geração de Fogo: Charmander, Charmeleon, Charizard -->
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander">
+        <h3>#004 Charmander</h3>
+        <p>Charmander é um Pokémon de fogo com uma chama na ponta da cauda, que representa sua vitalidade.</p>
+      </div>
 
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png" alt="Charmeleon">
+        <h3>#005 Charmeleon</h3>
+        <p>Charmeleon é a forma intermediária, mais agressiva e com chamas mais intensas em sua cauda.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="Charizard">
+        <h3>#006 Charizard</h3>
+        <p>Charizard, a forma final, pode voar e soltar chamas imensas, sendo um dos Pokémon mais poderosos.</p>
+      </div>
+
+      <!-- 1ª Geração de Água: Squirtle, Wartortle, Blastoise -->
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Squirtle">
+        <h3>#007 Squirtle</h3>
+        <p>Squirtle é um Pokémon de água com uma concha resistente e habilidades aquáticas excepcionais.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png" alt="Wartortle">
+        <h3>#008 Wartortle</h3>
+        <p>Wartortle é a evolução intermediária, mais forte e com cauda cheia de energia.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png" alt="Blastoise">
+        <h3>#009 Blastoise</h3>
+        <p>Blastoise tem canhões de água poderosos em suas costas, usados para ataques devastadores.</p>
+      </div>
+
+      <!-- 2ª Geração: Chikorita, Bayleef, Meganium -->
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/152.png" alt="Chikorita">
+        <h3>#152 Chikorita</h3>
+        <p>Chikorita é um Pokémon amável que emite um aroma suave que pode acalmar os corações das pessoas.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/153.png" alt="Bayleef">
+        <h3>#153 Bayleef</h3>
+        <p>Bayleef tem uma coroa de folhas em sua cabeça, e sua energia é usada para curar seus aliados.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/154.png" alt="Meganium">
+        <h3>#154 Meganium</h3>
+        <p>Meganium, a última forma evoluída, é conhecida por sua natureza pacífica e poder curativo.</p>
+      </div>
+
+      <!-- 2ª Geração de Fogo: Cyndaquil, Quilava, Typhlosion -->
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/155.png" alt="Cyndaquil">
+        <h3>#155 Cyndaquil</h3>
+        <p>Cyndaquil é um Pokémon de fogo, com chamas que queimam por todo seu corpo, especialmente nas costas.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/156.png" alt="Quilava">
+        <h3>#156 Quilava</h3>
+        <p>Quilava tem um fogo mais intenso e rápido, sendo ágil em batalha e em fuga.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/157.png" alt="Typhlosion">
+        <h3>#157 Typhlosion</h3>
+        <p>Typhlosion é um Pokémon com fogo imenso que surge de suas costas, usando isso em ataques explosivos.</p>
+      </div>
+
+      <!-- 2ª Geração de Água: Totodile, Croconaw, Feraligatr -->
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/158.png" alt="Totodile">
+        <h3>#158 Totodile</h3>
+        <p>Totodile é um Pokémon de água com um sorriso travesso, capaz de nadar e atacar com facilidade.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/159.png" alt="Croconaw">
+        <h3>#159 Croconaw</h3>
+        <p>Croconaw é mais forte, com presas afiadas e uma cauda poderosa que controla as águas.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/160.png" alt="Feraligatr">
+        <h3>#160 Feraligatr</h3>
+        <p>Feraligatr é um predador ágil e forte, com habilidades excepcionais de caça e natação.</p>
+      </div>
+
+      <!-- 3ª Geração: Treecko, Grovyle, Sceptile -->
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/252.png" alt="Treecko">
+        <h3>#252 Treecko</h3>
+        <p>Treecko é um Pokémon do tipo grama, ágil e com habilidades excepcionais de escalar árvores.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/253.png" alt="Grovyle">
+        <h3>#253 Grovyle</h3>
+        <p>Grovyle é a evolução intermediária, com maior destreza e habilidades de combate.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/254.png" alt="Sceptile">
+        <h3>#254 Sceptile</h3>
+        <p>Sceptile é um Pokémon rápido e forte, com uma grande conexão com a natureza e suas raízes.</p>
+      </div>
+
+      <!-- 3ª Geração de Fogo: Torchic, Combusken, Blaziken -->
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/255.png" alt="Torchic">
+        <h3>#255 Torchic</h3>
+        <p>Torchic é um Pokémon de fogo com grande potencial para batalhas intensas, mas começa como um pequeno filhote.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/256.png" alt="Combusken">
+        <h3>#256 Combusken</h3>
+        <p>Combusken evolui para um combate mais feroz e usa ataques de fogo e luta, aumentando sua agressividade.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/257.png" alt="Blaziken">
+        <h3>#257 Blaziken</h3>
+        <p>Blaziken é um Pokémon de fogo e luta, com um poder de ataque devastador e incrível velocidade.</p>
+      </div>
+
+      <!-- 3ª Geração de Água: Mudkip, Marshtomp, Swampert -->
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/258.png" alt="Mudkip">
+        <h3>#258 Mudkip</h3>
+        <p>Mudkip é um Pokémon de água com habilidades em combate e natação, rápido e resistente.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/259.png" alt="Marshtomp">
+        <h3>#259 Marshtomp</h3>
+        <p>Marshtomp evolui para um Pokémon robusto, com um grande controle sobre os ambientes aquáticos.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/260.png" alt="Swampert">
+        <h3>#260 Swampert</h3>
+        <p>Swampert é forte e versátil, capaz de dominar tanto em batalhas terrestres quanto aquáticas.</p>
+      </div>
+
+      <!-- 4ª Geração e além... -->
+      <!-- Continue com o mesmo padrão para as próximas gerações -->
     </div>
   </section>
-
-  <footer>
-    <p>&copy; 2025 Pokédex. Todos os direitos reservados.</p>
-  </footer>
-
-  <script>
-    // Função para alternar o contraste
-    function toggleContrast() {
-      document.body.classList.toggle('high-contrast');
-    }
-
-    // Adicionando classe de contraste ao body
-    document.body.classList.add('high-contrast');
-  </script>
-
 </body>
 </html>
